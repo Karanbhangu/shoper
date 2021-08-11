@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-er || Karan Bhangu</title>
+
+    <!--===================www.bootstrap======================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--===================Fontawesome======================-->
+    <link rel="stylesheet" href="css/Fontawesome.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/cart.png"/>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1><a href="#">Shop-er</a></h1>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#" onclick="opencart()">Cart</a></li>
+                <li><a href="#sectionproducts">Products</a></li>
+                <li id="searchbar"> <a href="https://github.com/karanbhangu" target="_blank">My Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="introduction">
+        <div class="leftside">
+            <h1>Shop-er</h1>
+            <p>We bring to you the best collection of latest trends. Checkout our latest products <span><a
+                        href="#sectionproducts">here</a></span> .</p>
+                        <div class="buttons">
+                            <a href="#" class="contact">Contact Us</a> <a href="#" class="services">Services</a>
+                        </div>
+        </div>
+        <div class="rightside">
+            <img src="img/Main_product.png" alt="" class="productimage" id="mainproduct" onmouseover="animateproduct()"
+                onmouseout="animateproductover()">
+        </div>
+    </section>
+    <section class="section-bg" id="sectionproducts">
+        <div class="container" id="productcontainer">
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title">
+                        <h2>Products</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Revolutionary Andriod oneplus</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="">Best collection casual pink shirt</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/9.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Formal Blue shirt for office purpose</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/8.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Sports white tshirt for long use</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/10.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Revolutionary Andriod oneplus</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/11.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Best collection casual pink shirt</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Formal Blue shirt for office purpose</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-product">
+                        <div class="product-thumb">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <div class="product-title">
+                            <h3><a href="#!">Sports white tshirt for long use</a></h3>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#!" class="btn-small mr-2">$879</a>
+                            <a href="#!" class="btn-round mr-2" onclick="addtocart(this.parentElement.parentElement)"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row button-center">
+                <div class="col-xl-6 centered">
+                    <a href="#!" class="bttn-def"><span>Load more</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="modalbox animatemodal" id="modal">
+        <div class="mainmodal">
+            <div class="uppers">
+                <img src="img/close.png" alt="" onclick="closemodal()">
+            </div>
+            <div class="lowers" id="cart">
+    <p>My Cart:</p>                
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>&#169; Karan Bhangu 2021-2022</p>
+    </section>
+</body>
+<script src="anime-js.js"></script>
+<script src="app.js"></script>
+
+</html>

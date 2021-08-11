@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Didact+Gothic&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.left {
+  padding: 0 0 0 5%;
+  width: 40%;
+}
+
+.left h1 {
+  font-weight: bold;
+}
+
+.right {
+  width: 60%;
+  padding: 0 3% 0 0;
+}
+
+.right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.right ul li a {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.right ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff005c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.right ul li a:hover {
+  color: #ff005c;
+}
+
+.right ul li a:hover::before {
+  width: 100%;
+}
+
+#searchbar input {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar input:focus {
+  outline: none;
+}
+
+#searchbar input::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar input:-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar input::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar input::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar button {
+  font-family: 'Poppins', sans-serif;
+}
+
+#searchbar button:focus {
+  outline: none;
+}
+
+#introduction {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftside {
+  padding: 0 3% 0 5%;
+  width: 50%;
+}
+
+.leftside a {
+  text-decoration: none;
+}
+
+.leftside h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.leftside p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #363636;
+}
+
+.leftside p span a {
+  color: #ff005c;
+  opacity: .8;
+  text-decoration: none;
+}
+
+.services {
+  border: 1.5px solid #ff005c;
+  margin-left: 15px;
+  color: #ff005c;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 4px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.services:hover {
+  color: #fff;
+  background: #ff005c;
+}
+
+.contact {
+  background: #ff005c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.rightside {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+}
+
+hr {
+  margin: 0 !important;
+}
+
+.modalbox {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  background: transparent;
+  /* display: flex; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainmodal {
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09), 3px 3px 5px rgba(0, 0, 0, 0.04);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09), 3px 3px 5px rgba(0, 0, 0, 0.04);
+  width: 80vw;
+  height: 80vh;
+  overflow: scroll;
+}
+
+.animatemodal {
+  -webkit-animation: animatemodal 0.5s linear;
+          animation: animatemodal 0.5s linear;
+}
+
+@-webkit-keyframes animatemodal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animatemodal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.uppers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+  height: 10%;
+}
+
+.uppers img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.lowers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+.removemodal {
+  -webkit-animation: removemodal 0.5s linear;
+          animation: removemodal 0.5s linear;
+}
+
+@-webkit-keyframes removemodal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes removemodal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.item{
+  width: 98%;
+  height: 150px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.picside{
+  width: 30%;
+  height: 100%;
+}
+.picside img{
+  max-width: 98%;
+  max-height: 98%;
+}
+.textside{
+  width: 70%;
+}
+.priceanditems{
+  display: flex;
+  align-items: center;
+}
+.priceanditems input{
+  width: 150px;
+  margin-left: 15px;
+}
+.priceanditems input:focus{
+  outline: none;
+}
+.buttons button:nth-child(2){
+  margin-left: 10px;
+}
+.footer{
+  height: 20px;
+  background: #363636;
+  color: #fff;
+  text-align: center;
+}
+.footer p{
+  margin: 0;
+}
+.btn-small{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.removinganimation{
+  animation: removinganimation 0.5s;
+}
+@keyframes removinganimation{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@media (max-width:900px){
+  nav{
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+  }
+  .right{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .right ul{
+    padding: 0;
+  }
+  .left{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #introduction{
+    flex-direction: column-reverse;
+  }
+  .rightside{
+    padding-top: 50px;
+    width: 100%;
+    height: 50%;
+  }
+  .rightside img{
+    width: 500px;
+    height: 500px;
+  }
+  .leftside{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leftside p{
+    text-align: center;
+  }
+  .mainmodal{
+    width: 100vw;
+    height: 100vh;
+  }
+  .picside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item{
+    width: 100%;
+    height: 180px;
+  }
+}
